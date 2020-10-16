@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>Snake Game</title>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+        
+        #restart {
+            border: 0;
+            position: absolute;
+            top: 5%;
+            width: 100px;
+            height: 50px;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            font-size: 35px;
+            display: block;
+        }
+        
+        #reset {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 40px;
+            width: 150px;
+            border-radius: 10px;
+            transform: translate(-50%, -50%);
+        }
+        
+        button {
+            width: 60px;
+            height: 30px;
+            border: 0;
+            border-radius: 8PX;
+            cursor: pointer;
+        }
+        
+        #pause {
+            border: 0;
+            position: absolute;
+            background-color: blueviolet;
+            top: 6%;
+            width: 100px;
+            height: 50px;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            font-size: 35px;
+            display: none;
+        }
+        
+        #btn2 {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<canvas id="snake" width="608" height="608">
+</canvas>
+<div id="restart">
+    <div id="reset">
+        <button id='btn1' onclick='resetGame()'>Restart</button>
+        <button id='btn2' onclick='pauseGame()'>Pause</button></div>
+
+</div>
+<script src="snake.js"></script>
+
+</html>
